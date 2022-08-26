@@ -1,6 +1,6 @@
 # jointprob, section D
 
-The [jointprob community](https://scicloj.github.io/docs/community/groups/jointprob/)  community is a Bayesian data analysis study group.
+The [jointprob community](https://scicloj.github.io/docs/community/groups/jointprob/) is a Bayesian data analysis study group.
 The goal is to work our way through Richard McELreath's *Rethinking Statistics, 2nd Ed* and the Grolemund and Wickham's [*R for Data Science*](https://bookdown.org/roy_schumacher/r4ds/). 
 It is sponsored by the [SciClo project](https://scicloj.github.io).
 
