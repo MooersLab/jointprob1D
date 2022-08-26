@@ -1,5 +1,5 @@
 ---
-title: "R4DS Section D meeting"
+title: "jointprob Section D meeting 1"
 author: "Blaine Mooers"
 date: "`r Sys.Date()`"
 output: pdf_document
