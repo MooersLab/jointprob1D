@@ -1,4 +1,6 @@
-# jointprob1D
+# jointprob, section D
+
+## meeting1.Rmd
 
 Rmarkdown file that I presented in the first meeting of section D of the [jointprob community](https://scicloj.github.io/docs/community/groups/jointprob/) on Saturday, August 20, 2022. 
 The jointprob community is a Bayesian data analysis study group.
