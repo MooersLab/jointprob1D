@@ -26,7 +26,7 @@ sum(prior)
 3.  Compute the likelihood at each value in grid
 
 ```{r}
-likelihood <-dbinom(6,size=9,prob=p_grid)
+likelihood <- dbinom(6,size=9,prob=p_grid)
 sum(likelihood)
 ```
 
@@ -71,8 +71,8 @@ mtext( "100 points")
 ```{r}
 sprior <- ifelse(p_grid < 0.5, 0, 1)/sum(ifelse(p_grid < 0.5, 0, 1))
 sum(sprior)
-likelihood <-dbinom(6,size=9,prob=p_grid)
-unstd.sposterior <-likelihood*sprior
+slikelihood <-dbinom(6,size=9,prob=p_grid)
+unstd.sposterior <-slikelihood*sprior
 sposterior <-unstd.sposterior/sum(unstd.sposterior)
 sum(sposterior)
 
@@ -83,6 +83,14 @@ plot( p_grid, sposterior,
 points(p_grid, sprior, col='magenta')
 points(p_grid, posterior, col='cyan')
 mtext( "Step prior, 100 grid points")
+
+legend(x = "topright",
+       c("sposterior", "sprior", "posterior"),
+       cex=.8,
+       col=c("black","magenta","cyan"),
+       lwd = 2,
+       bty = "n"
+       )  
 ```
 
 ## Repeat with Peaked prior
@@ -102,6 +110,14 @@ plot( p_grid, pkposterior,
 points(p_grid, pkprior, col='magenta')
 points(p_grid, posterior, col='cyan')
 mtext( "Peaked prior, 100 grid points")
+
+legend(x = "topright",
+       c("pkposterior", "pkprior", "posterior"),
+       cex=.8,
+       col=c("black","magenta","cyan"),
+       lwd = 2,
+       bty = "n"
+       )  
 ```
 
 ## Triangular distriution
@@ -131,16 +147,23 @@ plot( p_grid, tprior,
 ```
 
 ```{r}
-likelihood <-dbinom(6,size=9,prob=p_grid)
-unstd.tposterior <-likelihood*tprior
+tlikelihood <-dbinom(6,size=9,prob=p_grid)
+unstd.tposterior <-tlikelihood*tprior
 tposterior <-unstd.tposterior/sum(unstd.tposterior)
 tposterior
 plot( p_grid, tposterior, 
       type="b",
       xlab="Probability of water",
-      ylab="Prior probability")
+      ylab="Prior and posterior probabilities")
 points(p_grid, tprior, col='magenta')
-points(p_grid, tposterior, col='cyan')
+points(p_grid, posterior, col='cyan')
+legend(x = "topright",
+       c("tposterior", "tprior", "posterior"),
+       cex=.8,
+       col=c("black","magenta","cyan"),
+       lwd = 2,
+       bty = "n"
+       )  
 ```
 
 
