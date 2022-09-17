@@ -1,9 +1,9 @@
 ---
 title: "17 September 2022 jointprob meeting"
 output:
-  pdf_document: default
   html_document:
     df_print: paged
+  pdf_document: default
 editor_options:
   markdown:
     wrap: 72
@@ -63,8 +63,8 @@ sum(posterior)
 ```{r}
 plot( p_grid, posterior, 
       type="b",
-      xlab="probability ofwater",
-      ylab="posteriorprobability")
+      xlab="Probability of water",
+      ylab="Posterior probability")
 mtext( "100 points")
 ```
 ```{r}
@@ -78,8 +78,8 @@ posterior <-unstd.posterior/sum(unstd.posterior)
 sum(posterior)
 plot( p_grid, posterior, 
       type="b",
-      xlab="probability ofwater",
-      ylab="posteriorprobability")
+      xlab="Probability of water",
+      ylab="Posterior probability")
 mtext( "100 points")
 ```
 
@@ -95,8 +95,8 @@ sum(sposterior)
 
 plot( p_grid, sposterior, 
       type="b",
-      xlab="probability of water",
-      ylab="posterior probability")
+      xlab="Probability of water",
+      ylab="Posterior probability")
 points(p_grid, sprior, col='magenta')
 points(p_grid, posterior, col='cyan')
 mtext( "Step prior, 100 grid points")
@@ -115,15 +115,14 @@ legend(x = "topright",
 ### Example of a multimodal distribution
 
 ![bimodal](./images/bimodal.png){width="70%"}
-## Quadratic approximation
 
-### Pierre Simon Laplace
+### Quadratic approximation:  Pierre Simon Laplace
 
-- France's Issac Newton
-- Proved the general form of the Central Limit thereom
-- Proved a Bayesian interpretation of linear least-squares
-- Developed Laplace's transform
-- Developed the spherical harmonics
+- France's Issac Newton.
+- Proved the general form of the Central Limit Theorem.
+- Proved a Bayesian interpretation of linear least-squares.
+- Developed the Laplace transform.
+- Developed spherical harmonics.
 
 
 ![Pierre Simon LaPlace](./images/PierreSimonLaPlace.png){width="30%"}
@@ -132,7 +131,7 @@ legend(x = "topright",
 
 ![Eassy on Probability](./images/EssaysOnProbability.png){width="20%"}
 
-[Source on the Internet Archive](https://archive.org/details/philosophicaless00lapliala/page/n5/mode/2up)
+[Source: Internet Archive](https://archive.org/details/philosophicaless00lapliala/page/n5/mode/2up)
 
 
 There is a newer translation by Andrew I. Dale in 1998 and 2012 published by Springer.
@@ -141,11 +140,13 @@ It is suppose to be easier to read than the 1902 version and there is commentary
 
 Andrew Dale also wrote 
 
-Dale, A.I. (2012) \emph{A history of inverse probability: From Thomas Bayes to Karl Pearson} Springer Science & Business Media.
+Dale, A.I. (2012) *A history of inverse probability: From Thomas Bayes to Karl Pearson* Springer Science & Business Media.
 
 and 
 
-Dale, A.I. (2003) Most Honourable Remembrance: The Life and Work of Thomas Bayes. Springer.
+Dale, A.I. (2003) *Most Honourable Remembrance: The Life and Work of Thomas Bayes*. Springer.
+
+
 
 ### McGrayne's book
 
@@ -279,14 +280,14 @@ So with MCMC, we work with samples rather then with an estimate of the posterior
 
 #### 2-D example 
 
-Source: Sobol, I. M. (1994). \emph{A primer for the Monte Carlo method.} CRC press.
+Source: Sobol, I. M. (1973). *Numerical Monte Carlo Methods*. Nauka, Moscow.
 
 The ratio of the number of points inside the boundary and outside give the proportion of the square occupied by the irregular area.
 
 ![Determine area of irregular shape](./images/SobolIntegration.png)
 #### The bounding area could be another curve
 
-Source: Robert, C. P., Casella, G., and Casella, G. (2010). \emph{Introducing Monte Carlo methods with R}. New York: Springer.
+Source: Robert, C. P., Casella, G., and Casella, G. (2010). *Introducing Monte Carlo methods with R*. New York: Springer.
 
 ![Determine area under aribtrary curve](./images/RobertFig2.4.png)
 
@@ -309,8 +310,7 @@ P(\Delta E)=e^{-\Delta E / k T}
 
 
 Source: Metropolis, Nicholas; Rosenbluth, Arianna W.; Rosenbluth, Marshall N.; Teller, Augusta H.; and
-Teller, Edward (1953) Equation of state Calculations by Fast Computing Machines. The Journal of
-Chemical Physics. 21(6):1087.
+Teller, Edward (1953) Equation of state Calculations by Fast Computing Machines. The Journal of Chemical Physics. 21(6):1087.
 
 
 
@@ -381,6 +381,25 @@ curve( dbeta(x,W+1,L+1),lty=2,add=TRUE)
 ```
 
 
+#### Example with 1,000,000 samples
+
+```{r}
+n_samples <-1000000
+p <-rep(NA,n_samples)
+p[1] <- 0.5
+W <-6
+L <-3
+for (i in 2:n_samples){
+    p_new <-rnorm(1,p[i-1],0.1)
+    if (p_new<0) p_new <- abs(p_new)
+    if (p_new>1) p_new <- 2 - p_new
+    q0 <- dbinom(W,W+L,p[i-1])
+    q1 <- dbinom(W,W+L,p_new)
+    p[i] <- ifelse(runif(1)<q1/q0,p_new,p[i-1])
+}
+dens( p, xlim=c(0,1))
+curve( dbeta(x,W+1,L+1),lty=2,add=TRUE)
+```
 
 
 
