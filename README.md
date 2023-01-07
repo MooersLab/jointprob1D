@@ -1,9 +1,31 @@
 # jointprob, section D
 
 The [jointprob community](https://scicloj.github.io/docs/community/groups/jointprob/) is a Bayesian data analysis study group.
-The goal is to work through Richard McELreath's *Rethinking Statistics, 2nd Ed*.
-the [SciClo project](https://scicloj.github.io) sponsors jointprob. 
+The goal has to work through Richard McELreath's *Rethinking Statistics, 2nd Ed*.
+As of January 7, 2023, the focus is shifting to  *Bayesian Modeling and Computation In Python*.
+Ravin Kumar, one of the three authors of this book, attended the January 7th meeting.
+The book is available on-line for free
+
+The [SciClo project](https://scicloj.github.io) sponsors jointprob. 
 Daniel Slutsky leads the meetings.
+
+
+These are the quiding principles for the group (Thanks to Ryan Onsinger!):
+
+- *No experts.* We do not assume that anybody is an expert in the field. We come to learn together with a student mindset.
+
+- *A clear path.* We will be very thoughtful about the agenda and where we wish to go. We will continually rethink and adapt our pathway going there.
+
+- *Confused together.* It is just fine to be confused. We will be there together and seek clarity together.
+
+- *Being active.* We encourage members to learn independently and take on projects. In a sense, its purpose is (also) to support those individual journeys.
+
+- *Mutual curiosity.* We make serious efforts to be inclusive to participants of various backgrounds. The different perspectives of our friends are part of what we wish to learn.
+
+
+
+
+
 
 ## meeting1.Rmd
 
