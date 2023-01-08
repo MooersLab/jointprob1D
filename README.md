@@ -100,4 +100,5 @@ It recaps the grid approximation presentation and then covers the two other *mot
 
 I presented this Jupyter notebook on information theory at the Christmas Eve meeting of jointprob.
 I included material from chapter 11 of BMCP.
+One code cell does not work.
 
