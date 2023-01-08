@@ -1,8 +1,8 @@
 # jointprob
 
-The [jointprob community](https://scicloj.github.io/docs/community/groups/jointprob/) is a Bayesian data analysis study group.
-The goal has to work through Richard McElreath's *Rethinking Statistics, 2nd Ed*.
-We met on Sataurdays for two hours once every two weeks.
+The [jointprob community](https://scicloj.github.io/docs/community/groups/jointprob/) is a Bayesian data analysis (BDA) study group.
+Our goal was to work through Richard McElreath's *Rethinking Statistics, 2nd Ed*.
+We met for two hours once every two weeks.
 We made it through chapter 7.
  
 There were initially about 30 people interested in jointprob last summer.
