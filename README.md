@@ -25,7 +25,10 @@ The book uses three probabilitistic programming languages: PyMC, tensorflow prob
 Ravin is a mechanical enigineer who quit Space-X to spend time teaching himself BDA.
 He started contribuing to the [PyMC3](https://www.pymc.io/welcome.html) progect on GitHub.
 He then got hired at Google to apply BDA to various problems.
-He enthusiasm for BDA is contagious.
+He enthusiasm for BDA is contagious, as seen in the [video](https://www.youtube.com/watch?v=foSPfzYs4yY) that he made about Bayeisan vs. Frquentist approaches.
+
+He and others are offering a paid [course](https://www.intuitivebayes.com/introductorycourse) for professionals.
+The introductory course is available and two more are preparation. 
 
 The [book](https://bayesiancomputationbook.com/welcome.html) is available on-line for free.
 The [code](https://github.com/BayesianModelingandComputationInPython/BookCode_Edition1) for the book is located on Github.
@@ -101,4 +104,24 @@ It recaps the grid approximation presentation and then covers the two other *mot
 I presented this Jupyter notebook on information theory at the Christmas Eve meeting of jointprob.
 I included material from chapter 11 of BMCP.
 One code cell does not work.
+
+
+## Addendums
+
+### Quick tutorial in PyMC4 
+
+PyMC3 from the earlier PeerJ paper was translated to [PyMC4](https://www.pymc.io/projects/docs/en/stable/learn/core_notebooks/pymc_overview.html#pymc-overview)
+
+### Rethinking Statistics in PyMC
+Note that the McElreath's book has been fully translated into [PyMC3](https://github.com/pymc-devs/pymc-resources/tree/main/Rethinking_2) and largely translated into PyMC4, so the Rethinking Statistics book is ahead of the BMCP book in this regard.
+
+### Rethinking has been translated into Julia
+Note that the McElreath's book has been translated into [Julia](https://github.com/StatisticalRethinkingJulia).
+
+### BMCP has been translated into Julia
+
+
+#### Julia and the Turing Package
+
+[Fun introduction](https://storopoli.github.io/Bayesian-Julia/)
 
