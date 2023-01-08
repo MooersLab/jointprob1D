@@ -1,33 +1,37 @@
-# jointprob, section D
+# jointprob
 
 The [jointprob community](https://scicloj.github.io/docs/community/groups/jointprob/) is a Bayesian data analysis study group.
 The goal has to work through Richard McElreath's *Rethinking Statistics, 2nd Ed*.
 We met on Sataurdays for two hours once every two weeks.
 We made it through chapter 7.
-
-The [SciCloj project](https://scicloj.github.io) sponsors jointprob. 
+ 
 There were initially about 30 people interested in jointprob last summer.
 Four parallel sections were held to accommodate different schedules and time zones.
-I participated in Section D which met on Satruadys which was the last section left standing as of December.
+I participated in Section D, which met on Satruadys
+Secion D was the last section left standing as of December.
 We were down to 4-6 participants.
 It was time for a refresh.
 
 The consensus was to shift our focus to the book *Bayesian Modeling and Computation In Python (BMCP)* by Osvaldo Martin, Ravin Kumar, and Junpeng Lao.
 We had an organizing meeting on January 7th.
-Ravin Kumar attended our January 7th meeting.
+24 people attended. 
+
+Ravin Kumar also attended and spoke for about an hour.
 He provided invaluable insights about how best to read his book.
 He stressed that his book emphasizes the practice side before the theory.
 He recommened McElreath's book for the theory.
 The book uses three probabilitistic programming languages: PyMC, tensorflow probability, and numpyro.
 
 Ravin is a mechanical enigineer who quit Space-X to spend time teaching himself BDA.
-He started contribuing to the PyMC3 progect on GitHub.
-He then got is a job at Google applying BDA to various problems. 
+He started contribuing to the [PyMC3](https://www.pymc.io/welcome.html) progect on GitHub.
+He then got hired at Google to apply BDA to various problems.
+He enthusiasm for BDA is contagious.
 
 The [book](https://bayesiancomputationbook.com/welcome.html) is available on-line for free.
 The [code](https://github.com/BayesianModelingandComputationInPython/BookCode_Edition1) for the book is located on Github.
 The code in the book uses PyMC3, but the current version of pymc is version 5.
 The code has not been translated to PyMC5.
+The pymc community has a discord channel and an upcomming [webinar](https://pymcon.com/about) series. 
 
 The first four chapters are the heart of the book.
 They are all that you need to start practicing BDA.
@@ -44,10 +48,11 @@ Chapters 9, 10, and 11 contain appendix material.
 - 10 PPLs
 - 11 Appendical Topics (many theory topics are nicely summarized here )
 
-
-
 Daniel Slutsky leads the meetings.
 Ryan Onsinger is the community organizer.
+The SciCloj community sponsers the jointprob events.
+This community is developing scientific computing tools in Clojure.
+
 
 These are the quiding principles for the group (Thanks to Ryan Onsinger!):
 
