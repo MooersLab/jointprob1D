@@ -96,8 +96,8 @@ I presented this Rmarkdown file in the third meeting of section D on Saturday, S
 It recaps the grid approximation presentation and then covers the two other *motors* of the Bayesian data analysis engine: quadratic approximation and Markov Chain Monte Carlo.
 
 
-## meetingX.ipynb
+## SectionD10.ipynb
 
-I presented this Jupyter notebook on infomration theory at the Christmas Eve meeting of jointprob.
-I included material on information theory from chapter 11 of BMCP.
+I presented this Jupyter notebook on information theory at the Christmas Eve meeting of jointprob.
+I included material from chapter 11 of BMCP.
 
