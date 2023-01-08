@@ -50,7 +50,7 @@ Chapters 9, 10, and 11 contain appendix material.
 - 11 Appendical Topics (many theory topics are nicely summarized here )
 
 Daniel Slutsky leads the meetings.
-Ryan Onsinger is the community organizer.
+Ryan Orsinger is the community organizer.
 The SciCloj community sponsers the jointprob events.
 This community is developing scientific computing tools in Clojure.
 
