@@ -31,7 +31,7 @@ The [book](https://bayesiancomputationbook.com/welcome.html) is available on-lin
 The [code](https://github.com/BayesianModelingandComputationInPython/BookCode_Edition1) for the book is located on Github.
 The code in the book uses PyMC3, but the current version of pymc is version 5.
 The code has not been translated to PyMC5.
-The pymc community has a [discorse channel](https://discourse.pymc.io/) and an upcomming [webinar](https://pymcon.com/about] series. 
+The pymc community has a [discourse channel](https://discourse.pymc.io/) and an upcomming [webinar](https://pymcon.com/about) series. 
 They had a similar [series](https://www.youtube.com/watch?v=UznM_-_760Y&list=PLD1x-BW9UdeHN2vwR6kIApJATd2jZzeya&index=1) in 2020. 
 
 The first four chapters are the heart of the book.
