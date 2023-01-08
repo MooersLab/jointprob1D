@@ -12,7 +12,7 @@ I participated in Section D which met on Satruadys which was the last section le
 We were down to 4-6 participants.
 It was time for a refresh.
 
-The consensus was to shift our focus to the book *Bayesian Modeling and Computation In Python* by Osvaldo Martin, Ravin Kumar, and Junpeng Lao.
+The consensus was to shift our focus to the book *Bayesian Modeling and Computation In Python (BMCP)* by Osvaldo Martin, Ravin Kumar, and Junpeng Lao.
 We had an organizing meeting on January 7th.
 Ravin Kumar attended our January 7th meeting.
 He provided invaluable insights about how best to read his book.
@@ -24,7 +24,7 @@ Ravin is a mechanical enigineer who quit Space-X to spend time teaching himself 
 He started contribuing to the PyMC3 progect on GitHub.
 He then got is a job at Google applying BDA to various problems. 
 
-The book is available on-line for free.
+The [book](https://bayesiancomputationbook.com/welcome.html) is available on-line for free.
 The [code](https://github.com/BayesianModelingandComputationInPython/BookCode_Edition1) for the book is located on Github.
 The code in the book uses PyMC3, but the current version of pymc is version 5.
 The code has not been translated to PyMC5.
@@ -93,4 +93,5 @@ It recaps the grid approximation presentation and then covers the two other *mot
 ## meetingX.ipynb
 
 I presented this Jupyter notebook on infomration theory at the Christmas Eve meeting of jointprob.
+I included material on information theory from chapter 11 of BMCP.
 
