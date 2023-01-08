@@ -106,13 +106,39 @@ I included material from chapter 11 of BMCP.
 One code cell does not work.
 
 
-## Addendums
+## Appendix of Useful Links
 
-### Quick tutorial in PyMC4 
+
+### Programs 
+
+#### Stan (C++ wrapped in R)
+
+
+#### PyMC (Python)
+
+#####  Quick tutorial in PyMC4 
 
 PyMC3 from the earlier PeerJ paper was translated to [PyMC4](https://www.pymc.io/projects/docs/en/stable/learn/core_notebooks/pymc_overview.html#pymc-overview)
 
-### Rethinking Statistics in PyMC
+#### Turing (Julia)
+
+
+
+#### Anglican (Clojure)
+
+### Books 
+
+Many of the popular books on BDA have associated computer.
+Often, this computer code has been translated into other programming languages by kind people.
+
+### Bayesian Analysis in Python (BAP)
+
+The second edition of BAP's code in PyMC3.11 is available (https://github.com/aloctavodia/BAP)
+
+
+### Rethinking Statistics 
+
+#### PyMC varaition
 Note that the McElreath's book has been fully translated into [PyMC3](https://github.com/pymc-devs/pymc-resources/tree/main/Rethinking_2) and largely translated into PyMC4, so the Rethinking Statistics book is ahead of the BMCP book in this regard.
 
 ### Rethinking has been translated into Julia
@@ -124,4 +150,25 @@ Note that the McElreath's book has been translated into [Julia](https://github.c
 #### Julia and the Turing Package
 
 [Fun introduction](https://storopoli.github.io/Bayesian-Julia/)
+
+### John Krusche's Doing Bayesian Data Analysis (Puppydog book) in PyMC3
+
+https://github.com/JWarmenhoven/DBDA-python
+
+
+### Bayesian Ddata Analysis Edition 3 in PyMC3
+
+This is a more advanced (aka harder to read) book that was published with a minimal amount of code for Stan.
+The translation of the book is still a work in [progress](https://github.com/pymc-devs/pymc-resources/tree/main/BDA3).
+
+
+### Regression and Other Stories 
+
+
+#### R code
+This is a more accessible book. It is an update of an earlier book by Gelman and Hill. It is free and [on-line](https://statmodeling.stat.columbia.edu/2022/01/27/regression-and-other-stories-free-pdf/).
+
+#### PyMC3
+
+ It is being translated into the bambi wrapper for [PyMC](https://github.com/bambinos/educational-resources). Nothing has happened in two years.
 
