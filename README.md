@@ -1,3 +1,7 @@
+![version](https://img.shields.io/static/v1?label=jointProb1D&message=0.1&color=brightcolor)
+[![license: mit](https://img.shields.io/badge/license-mit-blue.svg)](https://opensource.org/licenses/mit)
+
+
 # jointprob
 
 The [jointprob community](https://scicloj.github.io/docs/community/groups/jointprob/) is a Bayesian data analysis (BDA) study group.
