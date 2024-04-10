@@ -182,7 +182,7 @@ This is a more accessible book. It is an update of an earlier book by Gelman and
 
 |Version      | Changes                                         | Date            |
 |:-----------:|:-----------------------------------------------:|:---------------:|
-| Version 0.3 |  Fixed typos in README.md                       | 2024 April 10    |
+| Version 0.2 |  Fixed typos in README.md                       | 2024 April 10    |
 
 
 ## Sources of funding
