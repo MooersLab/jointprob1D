@@ -1,4 +1,4 @@
-![version](https://img.shields.io/static/v1?label=jointProb1D&message=0.1&color=brightcolor)
+![version](https://img.shields.io/static/v1?label=jointProb1D&message=0.2&color=brightcolor)
 [![license: mit](https://img.shields.io/badge/license-mit-blue.svg)](https://opensource.org/licenses/mit)
 
 
@@ -11,7 +11,7 @@ We made it through chapter 7.
  
 There were initially about 30 people interested in jointprob last summer.
 Four parallel sections were held to accommodate different schedules and time zones.
-I participated in Section D, which met on Satruadys
+I participated in Section D, which met on Saturdays.
 Secion D was the last section left standing as of December.
 We were down to 4-6 participants.
 It was time for a refresh.
@@ -23,27 +23,27 @@ We had an organizing meeting on January 7th.
 Ravin Kumar also attended and spoke for about an hour.
 He provided invaluable insights about how best to read his book.
 He stressed that his book emphasizes the practice side before the theory.
-He recommened McElreath's book for the theory.
-The book uses three probabilitistic programming languages: PyMC, tensorflow probability, and numpyro.
+He recommended McElreath's book for the theory.
+The book uses three probabilistic programming languages: PyMC, tensorflow probability, and numpyro.
 
-Ravin is a mechanical enigineer who quit Space-X to spend time teaching himself BDA.
-He started contribuing to the [PyMC3](https://www.pymc.io/welcome.html) progect on GitHub.
+Ravin is a mechanical engineer who quit SpaceX to spend time teaching himself BDA.
+He started contributing to the [PyMC3](https://www.pymc.io/welcome.html) project on GitHub.
 He then got hired at Google to apply BDA to various problems.
-He enthusiasm for BDA is contagious, as seen in the [video](https://www.youtube.com/watch?v=foSPfzYs4yY) that he made about Bayeisan vs. Frquentist approaches.
+His enthusiasm for BDA is contagious, as seen in the [video](https://www.youtube.com/watch?v=foSPfzYs4yY) that he made about Bayesian vs. Frequentist approaches.
 
 He and others are offering a paid [course](https://www.intuitivebayes.com/introductorycourse) for professionals.
 The introductory course is available and two more are preparation. 
 
-The [book](https://bayesiancomputationbook.com/welcome.html) is available on-line for free.
-The [code](https://github.com/BayesianModelingandComputationInPython/BookCode_Edition1) for the book is located on Github.
+The [book](https://bayesiancomputationbook.com/welcome.html) is available online for free.
+The [code](https://github.com/BayesianModelingandComputationInPython/BookCode_Edition1) for the book is located on GitHub.
 The code in the book uses PyMC3, but the current version of pymc is version 5.
 The code has not been translated to PyMC5.
-The pymc community has a [discourse channel](https://discourse.pymc.io/) and an upcomming [webinar](https://pymcon.com/about) series. 
+The pymc community has a [discourse channel](https://discourse.pymc.io/) and an upcoming [webinar](https://pymcon.com/about) series. 
 They had a similar webinar [series](https://www.youtube.com/watch?v=UznM_-_760Y&list=PLD1x-BW9UdeHN2vwR6kIApJATd2jZzeya&index=1) in 2020. 
 
 The first four chapters are the heart of the book.
 They are all that you need to start practicing BDA.
-Chapters 5 - 8 are specialized topics that cover areas that most people will to use.
+Chapters 5 - 8 are specialized topics that cover areas that most people will use.
 Chapters 9, 10, and 11 contain appendix material.
 
 - 1 & 2 Basics
@@ -52,17 +52,17 @@ Chapters 9, 10, and 11 contain appendix material.
 - 6 Time series
 - 7 BART
 - 8 ABC
-- 9 Bayeisan workflow
+- 9 Bayesian workflow
 - 10 PPLs
 - 11 Appendical Topics (many theory topics are nicely summarized here )
 
 Daniel Slutsky leads the meetings.
 Ryan Orsinger is the community organizer.
-The SciCloj community sponsers the jointprob events.
+The SciCloj community sponsors the jointprob events.
 This community is developing scientific computing tools in Clojure.
 
 
-These are the quiding principles for the group (Thanks to Ryan Onsinger!):
+These are the guiding principles for the group (Thanks to Ryan Onsinger!):
 
 - *No experts.* We do not assume that anybody is an expert in the field. We come to learn together with a student mindset.
 
@@ -74,27 +74,28 @@ These are the quiding principles for the group (Thanks to Ryan Onsinger!):
 
 - *Mutual curiosity.* We make serious efforts to be inclusive to participants of various backgrounds. The different perspectives of our friends are part of what we wish to learn.
 
-You are not required to do the reading in advance, but you will get more out of the meetings if you do so.
-You will also get more out of the meetings by presenting a porition of the reading: the best way to learn to try teach to the material.
-This takes preparatory time. I found that 6-8 houres was required to put together a 30-40 minute talk.
+You don't need to do the reading in advance, but you will get more out of the meetings if you do so.
+You will also get more out of the meetings by presenting a portion of the reading: the best way to learn to try to teach the material.
+This takes preparatory time. 
+I found that 6-8 hours were required to put together a 30-40-minute talk.
 
 
 
 
 ## meeting1.Rmd
 
-Rmarkdown file that I presented in the first meeting of section D of the on Saturday, August 20, 2022. 
-I covered chapter 1 of McElreath and chapter 1-4 of Grolemund and Wickham [*R for Data Science*](https://bookdown.org/roy_schumacher/r4ds/).
+Rmarkdown file that I presented in the first meeting of section D on Saturday, August 20, 2022. 
+I covered Chapter 1 of McElreath and Chapters 1-4 of Grolemund and Wickham [*R for Data Science*](https://bookdown.org/roy_schumacher/r4ds/).
 
 ## meeting2b.Rmd
 
-I edited this Rmarkdown file that I presented in the second meeting of section D of the on Saturday, September 3, 2022. 
-Daniel Slutsky gave an excellent 80-minute presentation about computing the posterior distribution, which set me up well to present how to use grid approximation to estimate the posterior distribution in R.
+I edited this Rmarkdown file that I presented in the second meeting of section D on Saturday, September 3, 2022. 
+Daniel Slutsky gave an excellent 80-minute presentation about computing the posterior distribution, which prepared me well to present how to use grid approximation to estimate the posterior distribution in R.
 
 I included the suggested exercises from Chapter 2 of McElreath's *Rethinking Statistics, 2nd Ed*. 
 Next, I ventured off and tried a triangular distribution from the `extraDistr` package as a prior.
 
-I added some embellishments like the normalization of the prior and the summing of the prior and the likelihood as sanity checks.
+I added some embellishments, such as normalizing the prior, summing the prior, and estimating the likelihood, as sanity checks.
 These embellishments were not required to compute the correct posterior, but they deepened the understanding of what was happening.
 
 ## meeting3b.Rmd
@@ -132,7 +133,7 @@ PyMC3 from the earlier PeerJ paper was translated to [PyMC4](https://www.pymc.io
 
 ### Books 
 
-Many of the popular books on BDA have associated computer.
+Many of the popular books on BDA have associated computer code.
 Often, this computer code has been translated into other programming languages by kind people.
 
 ### Bayesian Analysis in Python (BAP)
@@ -142,11 +143,11 @@ The second edition of BAP's code in PyMC3.11 is available (https://github.com/al
 
 ### Rethinking Statistics 
 
-#### PyMC varaition
-Note that the McElreath's book has been fully translated into [PyMC3](https://github.com/pymc-devs/pymc-resources/tree/main/Rethinking_2) and largely translated into PyMC4, so the Rethinking Statistics book is ahead of the BMCP book in this regard.
+#### PyMC variation
+Note that McElreath's book has been fully translated into [PyMC3](https://github.com/pymc-devs/pymc-resources/tree/main/Rethinking_2) and largely translated into PyMC4, so the Rethinking Statistics book is ahead of the BMCP book in this regard.
 
 ### Rethinking has been translated into Julia
-Note that the McElreath's book has been translated into [Julia](https://github.com/StatisticalRethinkingJulia).
+McElreath's book has been translated into [Julia](https://github.com/StatisticalRethinkingJulia).
 
 ### BMCP has been translated into Julia
 
@@ -176,3 +177,17 @@ This is a more accessible book. It is an update of an earlier book by Gelman and
 
  It is being translated into the bambi wrapper for [PyMC](https://github.com/bambinos/educational-resources). Nothing has happened in two years.
 
+
+## Update History
+
+|Version      | Changes                                         | Date            |
+|:-----------:|:-----------------------------------------------:|:---------------:|
+| Version 0.3 |  Fixed typos in README.md                       | 2024 April 10    |
+
+
+## Sources of funding
+
+- NIH: R01 CA242845
+- NIH: R01 AI088011
+- NIH: P30 CA225520 (PI: R. Mannel)
+- NIH P20GM103640 and P30GM145423 (PI: A. West)
