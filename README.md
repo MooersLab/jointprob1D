@@ -5,14 +5,14 @@
 # jointprob
 
 The [jointprob community](https://scicloj.github.io/docs/community/groups/jointprob/) is a Bayesian data analysis (BDA) study group.
-Our goal was to work through Richard McElreath's *Rethinking Statistics, 2nd Ed*.
+We aimed to work through Richard McElreath's *Rethinking Statistics, 2nd Ed*.
 We met for two hours once every two weeks.
 We made it through chapter 7.
  
 There were initially about 30 people interested in jointprob last summer.
 Four parallel sections were held to accommodate different schedules and time zones.
 I participated in Section D, which met on Saturdays.
-Secion D was the last section left standing as of December.
+Section D was the last section left standing as of December.
 We were down to 4-6 participants.
 It was time for a refresh.
 
@@ -74,17 +74,15 @@ These are the guiding principles for the group (Thanks to Ryan Onsinger!):
 
 - *Mutual curiosity.* We make serious efforts to be inclusive to participants of various backgrounds. The different perspectives of our friends are part of what we wish to learn.
 
-You don't need to do the reading in advance, but you will get more out of the meetings if you do so.
+You do not need to do the reading in advance, but you will get more out of the meetings if you do so.
 You will also get more out of the meetings by presenting a portion of the reading: the best way to learn to try to teach the material.
 This takes preparatory time. 
-I found that 6-8 hours were required to put together a 30-40-minute talk.
-
-
+I found that 6-8 hours were required to assemble a 30-40-minute talk.
 
 
 ## meeting1.Rmd
 
-Rmarkdown file that I presented in the first meeting of section D on Saturday, August 20, 2022. 
+The Rmarkdown file that I presented in the first meeting of section D on Saturday, August 20, 2022. 
 I covered Chapter 1 of McElreath and Chapters 1-4 of Grolemund and Wickham [*R for Data Science*](https://bookdown.org/roy_schumacher/r4ds/).
 
 ## meeting2b.Rmd
@@ -116,14 +114,41 @@ One code cell does not work.
 
 ### Programs 
 
-#### Stan (C++ wrapped in R)
+#### Stan
+
+[Stan](https://mc-stan.org/) implements that Hamiltonian Monte Carlo (HMC) with the No U-turn Sampler, which searches parameter space much faster than MCMC samplers.
+HMC cannot handle models with discrete parameters. These parameters have to be marginalized out via algebra. See the [Stan Users Guide](https://mc-stan.org/docs/stan-users-guide/latent-discrete.html).
+
+##### cmdstan
+
+[cmdstan](https://mc-stan.org/users/interfaces/cmdstan) is probably the best way to access the current version of Stan. 
+PyStan and RStan lag by several versions.
+
+##### BridgeStan
+
+[BridgeStan](https://github.com/roualdes/bridgestan) new way to interact with Stan model objects from R, Python, Julia, Rust, or C.
+They talk to each via their C interfaces.
+BrdigeStan allows you to access the methods of Stan model objects from a program than C++, which Stan is written in.
+You can also use [ArviZ](https://www.arviz.org/en/latest/) to make plots from the sampled posterior for an Stan object.
+
+##### nutpie
+
+[nutpie](https://github.com/pymc-devs/nutpie) is a rust based interface to both Stan and PyMC.
+It is on version 0.1 and very underdeveloped.
+There is only a working example for modeling the mean of a sample from stan model.
+
+
+#### RStan (C++ wrapped in R)
 
 
 #### PyMC (Python)
 
 #####  Quick tutorial in PyMC4 
 
-PyMC3 from the earlier PeerJ paper was translated to [PyMC4](https://www.pymc.io/projects/docs/en/stable/learn/core_notebooks/pymc_overview.html#pymc-overview)
+PyMC3 from the earlier PeerJ paper was translated to [PyMC4](https://www.pymc.io/projects/docs/en/stable/learn/core_notebooks/pymc_overview.html#pymc-overview).
+
+Note that [PyMC](https://www.pymc.io/welcome.html) is now in the version 5 series.
+The appending of a number has been dropped.
 
 #### Turing (Julia)
 
