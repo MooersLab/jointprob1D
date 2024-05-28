@@ -122,11 +122,12 @@ HMC cannot handle models with discrete parameters. These parameters have to be m
 ##### cmdstan
 
 [cmdstan](https://mc-stan.org/users/interfaces/cmdstan) is probably the best way to access the current version of Stan. 
-PyStan and RStan lag by several versions.
+PyStan and RStan lag behind by several versions.
+There are cmdstanpy and cmdstanR to interface with cmdstan from Python or R.
 
 ##### BridgeStan
 
-[BridgeStan](https://github.com/roualdes/bridgestan) new way to interact with Stan model objects from R, Python, Julia, Rust, or C.
+[BridgeStan](https://github.com/roualdes/bridgestan) is a new way to interact with Stan model objects from R, Python, Julia, Rust, or C.
 They talk to each via their C interfaces.
 BrdigeStan allows you to access the methods of Stan model objects from a program than C++, which Stan is written in.
 You can also use [ArviZ](https://www.arviz.org/en/latest/) to make plots from the sampled posterior for an Stan object.
@@ -208,6 +209,7 @@ This is a more accessible book. It is an update of an earlier book by Gelman and
 |Version      | Changes                                         | Date            |
 |:-----------:|:-----------------------------------------------:|:---------------:|
 | Version 0.2 |  Fixed typos in README.md                       | 2024 April 10    |
+| Version 0.3 | Added more links.                               | 2024 May 28    |
 
 
 ## Sources of funding
